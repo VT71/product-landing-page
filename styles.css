@@ -1,0 +1,237 @@
+*,
+div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #031226;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-img {
+    width: 20em;
+}
+
+#nav-bar {
+    display: inline-block;
+}
+
+#nav-bar a {
+    margin-right: 1em;
+}
+
+.email-form {
+    text-align: center;
+    margin-top: 75px;
+}
+
+.email-input {
+    border: 1px solid #031226;
+    border-radius: 0;
+    width: 15em;
+    height: 2em;
+}
+
+a,
+button,
+.button.submit-email {
+    cursor: pointer;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    background-color: #031226;
+    color: white;
+    border: none;
+    height: 2.5em;
+    width: 10em;
+}
+
+.section {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.section.one {
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.section-one-container {
+    background-color: #031226;
+    color: white;
+    width: 17em;
+    height: 17em;
+    margin: 2em;
+    padding: 1em 1em;
+}
+
+.section-one-container h2 {
+    font-size: 1.5em;
+}
+
+.section-one-container p {
+    font-size: 0.9em;
+}
+
+.fa-solid {
+    font-size: 2.2em;
+}
+
+.section.one h2,
+.section1-p {
+    margin-bottom: 0;
+}
+
+.video-frame {
+    border-style: none;
+    width: 30em;
+    height: 18em;
+}
+
+.section.three {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 65em;
+    margin: auto;
+}
+
+.price-container {
+    border: 1px solid #031226;
+    margin: 2em;
+    width: 15em;
+    background-color: #f4f6fc;
+    padding: 0 1em;
+}
+
+.section3-heading-div {
+    background-color: #f4f6fc;
+    color: #031226;
+    border-bottom: 1px solid #031226;
+    width: 100%;
+}
+
+.section.three h3 {
+    margin-top: 0;
+}
+
+.nav-link,
+h1,
+h2,
+h3,
+footer a {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+
+h4,
+p {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.nav-link,
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.button.select {
+    margin-bottom: 1em;
+}
+
+.section.three h3 {
+    margin: 0;
+}
+
+.section3-heading-div {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+footer {
+    margin-top: 3em;
+    height: 5em;
+    padding: 2em 0;
+    text-align: center;
+    background-color: #031226;
+    width: 65em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer a:not(footer a:last-of-type) {
+    margin-right: 2em;
+}
+
+@media (max-width: 770px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    .email-form {
+        margin-top: 100px;
+    }
+    .section.one {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section.three div:nth-of-type(3),
+    .section.three div:nth-of-type(1) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .section.three div {
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 65em) {
+    footer {
+        width: 100%;
+    }
+    .section.three {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
